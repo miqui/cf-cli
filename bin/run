@@ -1,0 +1,5 @@
+#!/bin/bash
+
+set -e
+$(dirname $0)/build
+go run -race $(dirname $0)/../main/cf.go "$@"
